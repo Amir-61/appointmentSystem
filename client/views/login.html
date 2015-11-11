@@ -1,0 +1,15 @@
+<form>
+    <div id="form-div">
+        <h2 class="form-signin-heading">Login System</h2>
+        UserName:<input class="form-control" type="text" ng-model="data.email" required name="username" placeholder="User Name"><br/>
+        Password:<input class="form-control" type="password" ng-model="data.password" required name="password" placeholder="Password"><br/>       
+        <button class="btn btn-lg btn-primary btn-block"  ng-click="submit()">Sign in</button>
+
+    </div>
+    <br/>
+    <div class="alert alert-danger" id="alert" role="alert" ng-show="unAuthorized">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Enter valid email/password
+    </div>
+</form>

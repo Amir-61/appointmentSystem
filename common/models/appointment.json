@@ -1,0 +1,29 @@
+{
+  "name": "Appointment",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appointmentDate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "physician": {
+      "type": "belongsTo",
+      "model": "Physician",
+      "foreignKey": "physicianId",
+      "required": true
+    },
+    "patient": {
+      "type": "belongsTo",
+      "model": "Patient",
+      "foreignKey": "patientId",
+      "required": true
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

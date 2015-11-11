@@ -1,0 +1,42 @@
+{
+  "ids": {
+    "AccessToken": 2,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "whiskey": 1,
+    "review": 1,
+    "user": 2,
+    "Physician": 4,
+    "Appointment": 6,
+    "Patient": 4
+  },
+  "models": {
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "whiskey": {},
+    "review": {},
+    "user": {
+      "1": "{\"username\":\"foo\",\"password\":\"$2a$10$WZ5YOyJkHUSFd0iEJEtHqOE/jvxo2Ij.LxtrRQSAFYigaR37YoZqm\",\"email\":\"foo@bar.com\",\"id\":1}"
+    },
+    "Physician": {
+      "1": "{\"name\":\"Dr1\",\"id\":1}",
+      "2": "{\"name\":\"Dr2\",\"id\":2}",
+      "3": "{\"name\":\"Dr3\",\"id\":3}"
+    },
+    "Appointment": {
+      "1": "{\"appointmentDate\":\"2015-11-05T21:25:40.492Z\",\"physicianId\":1,\"patientId\":1,\"id\":1}",
+      "2": "{\"appointmentDate\":\"2015-11-05T21:25:40.492Z\",\"physicianId\":1,\"patientId\":2,\"id\":2}",
+      "3": "{\"appointmentDate\":\"2015-11-05T21:25:40.492Z\",\"physicianId\":2,\"patientId\":2,\"id\":3}",
+      "4": "{\"appointmentDate\":\"2015-11-05T21:25:40.492Z\",\"physicianId\":2,\"patientId\":3,\"id\":4}",
+      "5": "{\"appointmentDate\":\"2015-11-05T21:25:40.492Z\",\"physicianId\":3,\"patientId\":2,\"id\":5}"
+    },
+    "Patient": {
+      "1": "{\"name\":\"patient1\",\"id\":1}",
+      "2": "{\"name\":\"patient2\",\"id\":2}",
+      "3": "{\"name\":\"patient3\",\"id\":3}"
+    }
+  }
+}

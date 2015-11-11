@@ -1,0 +1,13 @@
+<h1>Physicians</h1>
+<ul class="list-unstyled" class="container">
+    <li ng-repeat="physician in physicians">
+        <div class="row whiskey-item">
+            <div class="col-xs-9">
+                <h4>{{physician.name}}</h4>
+                <div class="distillery">id: {{physician.id}}</div>
+            </div><div class="col-xs-2 text-right">
+                <a href="#/appointment/{{physician.id}}" class="btn btn-primary">See appointments</a>
+            </div>
+        </div>
+    </li>
+</ul>

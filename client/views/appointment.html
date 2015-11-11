@@ -1,0 +1,14 @@
+<h1>Appointments of {{physiciansInfo[0].name}}</h1>
+<ul class="list-unstyled" class="container">
+  <li ng-repeat="appointment in appointments" class="review-item">
+    <div class="row">
+      <div class="col-xs-12 rating">Appointment Date: {{appointment.appointmentDate}}</div>      
+    </div>
+    <div class="row">
+      <div class="col-xs-12 comment">Patient Name:{{appointment.patient.name}}</div>
+    </div>
+  </li>  
+  <li>
+    <a href="#/book/{{physiciansInfo[0].id}}" class="btn btn-primary">Book an appointment</a>
+  </li>
+</ul>

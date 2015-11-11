@@ -1,0 +1,12 @@
+<form role="form">
+    Patient: <select ng-required="test" ng-model="patient"  ng-options="patient.name for patient in patients">        
+    </select>
+    <br/>
+    <br/>
+    Appointment Date: <input ng-required="test" type="date" ng-model="appointmentDate">
+    <br/>
+    <br/>
+    <div class="form-group">
+        <button class="btn btn-default" ng-click="submit()">Submit</button>
+    </div>
+</form>
