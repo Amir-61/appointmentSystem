@@ -15,6 +15,7 @@ angular.module('appointmentApp')
               name: $scope.physicianName
             };
             Physician.create(param, function (value, res) {
+              $scope.physicianName = ''
               $scope.physicians = Physician.find();
               $location.path('/main');
             });
