@@ -25,6 +25,7 @@
       <div class="header" ng-controller="headerCtrl">
         <ul class="nav nav-pills pull-right">
           <li ng-show="isLoggedIn" ng-class="{ active: isActive('/')}"><a ng-href="#">Home</a></li>
+          <li ng-show="isLoggedIn"><a ng-href="#/patients">Add a patient</a></li>
           <li ng-show="isLoggedIn"><a ng-href="#/about">About</a></li>
           <li ng-show="isLoggedIn"><a ng-href="#" ng-click="logout()" >Logout</a></li>
         </ul>
@@ -73,6 +74,7 @@
         <script src="scripts/controllers/header.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/patient.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/appointment.js"></script>
         <script src="scripts/controllers/book.js"></script>

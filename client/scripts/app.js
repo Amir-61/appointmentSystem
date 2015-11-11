@@ -28,6 +28,10 @@ angular
                         templateUrl: 'views/about.html',
                         controller: 'AboutCtrl'
                     })
+                    .when('/patients', {
+                        templateUrl: 'views/patient.html',
+                        controller: 'PatientCtrl'
+                    })
                     .when('/appointment/:id', {
                         templateUrl: 'views/appointment.html',
                         controller: 'appointmentCtrl'
