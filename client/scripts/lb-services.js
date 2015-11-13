@@ -1122,6 +1122,85 @@ module.factory(
       { 'id': '@id' },
       {
 
+        // INTERNAL. Use Physician.patients.findById() instead.
+        "prototype$__findById__patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Physician.patients.destroyById() instead.
+        "prototype$__destroyById__patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Physician.patients.updateById() instead.
+        "prototype$__updateById__patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Physician.patients.link() instead.
+        "prototype$__link__patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Physician.patients.unlink() instead.
+        "prototype$__unlink__patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Physician.patients.exists() instead.
+        "prototype$__exists__patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use Physician.patients() instead.
+        "prototype$__get__patients": {
+          isArray: true,
+          url: urlBase + "/Physicians/:id/patients",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Physician.patients.create() instead.
+        "prototype$__create__patients": {
+          url: urlBase + "/Physicians/:id/patients",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Physician.patients.destroyAll() instead.
+        "prototype$__delete__patients": {
+          url: urlBase + "/Physicians/:id/patients",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Physician.patients.count() instead.
+        "prototype$__count__patients": {
+          url: urlBase + "/Physicians/:id/patients/count",
+          method: "GET"
+        },
+
         /**
          * @ngdoc method
          * @name lbServices.Physician#create
@@ -1547,89 +1626,89 @@ module.factory(
           method: "GET"
         },
 
-        // INTERNAL. Use Patient.physicans.findById() instead.
-        "::findById::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.findById() instead.
+        "::findById::Patient::physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Patient.physicans.destroyById() instead.
-        "::destroyById::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.destroyById() instead.
+        "::destroyById::Patient::physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Patient.physicans.updateById() instead.
-        "::updateById::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.updateById() instead.
+        "::updateById::Patient::physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Patient.physicans.link() instead.
-        "::link::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.link() instead.
+        "::link::Patient::physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/rel/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Patient.physicans.unlink() instead.
-        "::unlink::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.unlink() instead.
+        "::unlink::Patient::physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/rel/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Patient.physicans.exists() instead.
-        "::exists::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.exists() instead.
+        "::exists::Patient::physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/rel/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use Patient.physicans() instead.
-        "::get::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss() instead.
+        "::get::Patient::physicanssss": {
           isArray: true,
-          url: urlBase + "/Patients/:id/physicans",
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "GET"
         },
 
-        // INTERNAL. Use Patient.physicans.create() instead.
-        "::create::Patient::physicans": {
-          url: urlBase + "/Patients/:id/physicans",
+        // INTERNAL. Use Patient.physicanssss.create() instead.
+        "::create::Patient::physicanssss": {
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "POST"
         },
 
-        // INTERNAL. Use Patient.physicans.createMany() instead.
-        "::createMany::Patient::physicans": {
+        // INTERNAL. Use Patient.physicanssss.createMany() instead.
+        "::createMany::Patient::physicanssss": {
           isArray: true,
-          url: urlBase + "/Patients/:id/physicans",
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "POST"
         },
 
-        // INTERNAL. Use Patient.physicans.destroyAll() instead.
-        "::delete::Patient::physicans": {
-          url: urlBase + "/Patients/:id/physicans",
+        // INTERNAL. Use Patient.physicanssss.destroyAll() instead.
+        "::delete::Patient::physicanssss": {
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Patient.physicans.count() instead.
-        "::count::Patient::physicans": {
-          url: urlBase + "/Patients/:id/physicans/count",
+        // INTERNAL. Use Patient.physicanssss.count() instead.
+        "::count::Patient::physicanssss": {
+          url: urlBase + "/Patients/:id/physicanssss/count",
           method: "GET"
         },
       }
@@ -1768,6 +1847,416 @@ module.factory(
     */
     R.modelName = "Physician";
 
+    /**
+     * @ngdoc object
+     * @name lbServices.Physician.patients
+     * @header lbServices.Physician.patients
+     * @object
+     * @description
+     *
+     * The object `Physician.patients` groups methods
+     * manipulating `Patient` instances related to `Physician`.
+     *
+     * Call {@link lbServices.Physician#patients Physician.patients()}
+     * to query all related instances.
+     */
+
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician#patients
+         * @methodOf lbServices.Physician
+         *
+         * @description
+         *
+         * Queries patients of Physician.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `filter` – `{object=}` - 
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::get::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#count
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Counts patients of Physician.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `where` – `{object=}` - Criteria to match model instances
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `count` – `{number=}` - 
+         */
+        R.patients.count = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::count::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#create
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Creates a new instance in patients of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients.create = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::create::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#createMany
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Creates a new instance in patients of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Array.<Object>,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Array.<Object>} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients.createMany = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::createMany::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#destroyAll
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Deletes all patients of this model.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.patients.destroyAll = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::delete::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#destroyById
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Delete a related item by id for patients.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for patients
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.patients.destroyById = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::destroyById::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#exists
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Check the existence of patients relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for patients
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients.exists = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::exists::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#findById
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Find a related item by id for patients.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for patients
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients.findById = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::findById::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#link
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Add a related item by id for patients.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for patients
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients.link = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::link::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#unlink
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Remove the patients relation to an item by id.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for patients
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * This method returns no data.
+         */
+        R.patients.unlink = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::unlink::Physician::patients"];
+          return action.apply(R, arguments);
+        };
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Physician.patients#updateById
+         * @methodOf lbServices.Physician.patients
+         *
+         * @description
+         *
+         * Update a related item by id for patients.
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - PersistedModel id
+         *
+         *  - `fk` – `{*}` - Foreign key for patients
+         *
+         * @param {Object} postData Request data.
+         *
+         * This method expects a subset of model properties as request parameters.
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * <em>
+         * (The remote method definition does not provide any description.
+         * This usually means the response is a `Patient` object.)
+         * </em>
+         */
+        R.patients.updateById = function() {
+          var TargetResource = $injector.get("Patient");
+          var action = TargetResource["::updateById::Physician::patients"];
+          return action.apply(R, arguments);
+        };
 
     return R;
   }]);
@@ -2503,82 +2992,82 @@ module.factory(
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use Patient.physicans.findById() instead.
-        "prototype$__findById__physicans": {
+        // INTERNAL. Use Patient.physicanssss.findById() instead.
+        "prototype$__findById__physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Patient.physicans.destroyById() instead.
-        "prototype$__destroyById__physicans": {
+        // INTERNAL. Use Patient.physicanssss.destroyById() instead.
+        "prototype$__destroyById__physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Patient.physicans.updateById() instead.
-        "prototype$__updateById__physicans": {
+        // INTERNAL. Use Patient.physicanssss.updateById() instead.
+        "prototype$__updateById__physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Patient.physicans.link() instead.
-        "prototype$__link__physicans": {
+        // INTERNAL. Use Patient.physicanssss.link() instead.
+        "prototype$__link__physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/rel/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/rel/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Patient.physicans.unlink() instead.
-        "prototype$__unlink__physicans": {
+        // INTERNAL. Use Patient.physicanssss.unlink() instead.
+        "prototype$__unlink__physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/rel/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/rel/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Patient.physicans.exists() instead.
-        "prototype$__exists__physicans": {
+        // INTERNAL. Use Patient.physicanssss.exists() instead.
+        "prototype$__exists__physicanssss": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/Patients/:id/physicans/rel/:fk",
+          url: urlBase + "/Patients/:id/physicanssss/rel/:fk",
           method: "HEAD"
         },
 
-        // INTERNAL. Use Patient.physicans() instead.
-        "prototype$__get__physicans": {
+        // INTERNAL. Use Patient.physicanssss() instead.
+        "prototype$__get__physicanssss": {
           isArray: true,
-          url: urlBase + "/Patients/:id/physicans",
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "GET"
         },
 
-        // INTERNAL. Use Patient.physicans.create() instead.
-        "prototype$__create__physicans": {
-          url: urlBase + "/Patients/:id/physicans",
+        // INTERNAL. Use Patient.physicanssss.create() instead.
+        "prototype$__create__physicanssss": {
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "POST"
         },
 
-        // INTERNAL. Use Patient.physicans.destroyAll() instead.
-        "prototype$__delete__physicans": {
-          url: urlBase + "/Patients/:id/physicans",
+        // INTERNAL. Use Patient.physicanssss.destroyAll() instead.
+        "prototype$__delete__physicanssss": {
+          url: urlBase + "/Patients/:id/physicanssss",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Patient.physicans.count() instead.
-        "prototype$__count__physicans": {
-          url: urlBase + "/Patients/:id/physicans/count",
+        // INTERNAL. Use Patient.physicanssss.count() instead.
+        "prototype$__count__physicanssss": {
+          url: urlBase + "/Patients/:id/physicanssss/count",
           method: "GET"
         },
 
@@ -3001,6 +3490,92 @@ module.factory(
           method: "POST"
         },
 
+        // INTERNAL. Use Physician.patients.findById() instead.
+        "::findById::Physician::patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/:fk",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Physician.patients.destroyById() instead.
+        "::destroyById::Physician::patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Physician.patients.updateById() instead.
+        "::updateById::Physician::patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Physician.patients.link() instead.
+        "::link::Physician::patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/rel/:fk",
+          method: "PUT"
+        },
+
+        // INTERNAL. Use Physician.patients.unlink() instead.
+        "::unlink::Physician::patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/rel/:fk",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Physician.patients.exists() instead.
+        "::exists::Physician::patients": {
+          params: {
+          'fk': '@fk'
+          },
+          url: urlBase + "/Physicians/:id/patients/rel/:fk",
+          method: "HEAD"
+        },
+
+        // INTERNAL. Use Physician.patients() instead.
+        "::get::Physician::patients": {
+          isArray: true,
+          url: urlBase + "/Physicians/:id/patients",
+          method: "GET"
+        },
+
+        // INTERNAL. Use Physician.patients.create() instead.
+        "::create::Physician::patients": {
+          url: urlBase + "/Physicians/:id/patients",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Physician.patients.createMany() instead.
+        "::createMany::Physician::patients": {
+          isArray: true,
+          url: urlBase + "/Physicians/:id/patients",
+          method: "POST"
+        },
+
+        // INTERNAL. Use Physician.patients.destroyAll() instead.
+        "::delete::Physician::patients": {
+          url: urlBase + "/Physicians/:id/patients",
+          method: "DELETE"
+        },
+
+        // INTERNAL. Use Physician.patients.count() instead.
+        "::count::Physician::patients": {
+          url: urlBase + "/Physicians/:id/patients/count",
+          method: "GET"
+        },
+
         // INTERNAL. Use Appointment.patient() instead.
         "::get::Appointment::patient": {
           url: urlBase + "/Appointments/:id/patient",
@@ -3144,27 +3719,27 @@ module.factory(
 
     /**
      * @ngdoc object
-     * @name lbServices.Patient.physicans
-     * @header lbServices.Patient.physicans
+     * @name lbServices.Patient.physicanssss
+     * @header lbServices.Patient.physicanssss
      * @object
      * @description
      *
-     * The object `Patient.physicans` groups methods
+     * The object `Patient.physicanssss` groups methods
      * manipulating `Physician` instances related to `Patient`.
      *
-     * Call {@link lbServices.Patient#physicans Patient.physicans()}
+     * Call {@link lbServices.Patient#physicanssss Patient.physicanssss()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient#physicans
+         * @name lbServices.Patient#physicanssss
          * @methodOf lbServices.Patient
          *
          * @description
          *
-         * Queries physicans of Patient.
+         * Queries physicanssss of Patient.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3187,20 +3762,20 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans = function() {
+        R.physicanssss = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::get::Patient::physicans"];
+          var action = TargetResource["::get::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#count
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#count
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Counts physicans of Patient.
+         * Counts physicanssss of Patient.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3222,20 +3797,20 @@ module.factory(
          *
          *  - `count` – `{number=}` - 
          */
-        R.physicans.count = function() {
+        R.physicanssss.count = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::count::Patient::physicans"];
+          var action = TargetResource["::count::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#create
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#create
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Creates a new instance in physicans of this model.
+         * Creates a new instance in physicanssss of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3260,20 +3835,20 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans.create = function() {
+        R.physicanssss.create = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::create::Patient::physicans"];
+          var action = TargetResource["::create::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#createMany
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#createMany
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Creates a new instance in physicans of this model.
+         * Creates a new instance in physicanssss of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3298,20 +3873,20 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans.createMany = function() {
+        R.physicanssss.createMany = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::createMany::Patient::physicans"];
+          var action = TargetResource["::createMany::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#destroyAll
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#destroyAll
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Deletes all physicans of this model.
+         * Deletes all physicanssss of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3329,26 +3904,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.physicans.destroyAll = function() {
+        R.physicanssss.destroyAll = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::delete::Patient::physicans"];
+          var action = TargetResource["::delete::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#destroyById
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#destroyById
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Delete a related item by id for physicans.
+         * Delete a related item by id for physicanssss.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for physicans
+         *  - `fk` – `{*}` - Foreign key for physicanssss
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3362,26 +3937,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.physicans.destroyById = function() {
+        R.physicanssss.destroyById = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::destroyById::Patient::physicans"];
+          var action = TargetResource["::destroyById::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#exists
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#exists
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Check the existence of physicans relation to an item by id.
+         * Check the existence of physicanssss relation to an item by id.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for physicans
+         *  - `fk` – `{*}` - Foreign key for physicanssss
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3398,26 +3973,26 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans.exists = function() {
+        R.physicanssss.exists = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::exists::Patient::physicans"];
+          var action = TargetResource["::exists::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#findById
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#findById
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Find a related item by id for physicans.
+         * Find a related item by id for physicanssss.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for physicans
+         *  - `fk` – `{*}` - Foreign key for physicanssss
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3434,26 +4009,26 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans.findById = function() {
+        R.physicanssss.findById = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::findById::Patient::physicans"];
+          var action = TargetResource["::findById::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#link
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#link
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Add a related item by id for physicans.
+         * Add a related item by id for physicanssss.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for physicans
+         *  - `fk` – `{*}` - Foreign key for physicanssss
          *
          * @param {Object} postData Request data.
          *
@@ -3474,26 +4049,26 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans.link = function() {
+        R.physicanssss.link = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::link::Patient::physicans"];
+          var action = TargetResource["::link::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#unlink
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#unlink
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Remove the physicans relation to an item by id.
+         * Remove the physicanssss relation to an item by id.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for physicans
+         *  - `fk` – `{*}` - Foreign key for physicanssss
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3507,26 +4082,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.physicans.unlink = function() {
+        R.physicanssss.unlink = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::unlink::Patient::physicans"];
+          var action = TargetResource["::unlink::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Patient.physicans#updateById
-         * @methodOf lbServices.Patient.physicans
+         * @name lbServices.Patient.physicanssss#updateById
+         * @methodOf lbServices.Patient.physicanssss
          *
          * @description
          *
-         * Update a related item by id for physicans.
+         * Update a related item by id for physicanssss.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for physicans
+         *  - `fk` – `{*}` - Foreign key for physicanssss
          *
          * @param {Object} postData Request data.
          *
@@ -3547,9 +4122,9 @@ module.factory(
          * This usually means the response is a `Physician` object.)
          * </em>
          */
-        R.physicans.updateById = function() {
+        R.physicanssss.updateById = function() {
           var TargetResource = $injector.get("Physician");
-          var action = TargetResource["::updateById::Patient::physicans"];
+          var action = TargetResource["::updateById::Patient::physicanssss"];
           return action.apply(R, arguments);
         };
 

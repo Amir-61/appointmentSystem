@@ -17,9 +17,9 @@
   },
   "validations": [],
   "relations": {
-    "appointments": {
+    "patients": {
       "type": "hasMany",
-      "model": "patient",
+      "model": "Patient",
       "foreignKey": "physicianId",
       "through": "Appointment"
     }
