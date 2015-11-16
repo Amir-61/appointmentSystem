@@ -1,13 +1,16 @@
 {
     "patients": [
         {
-            "name": "John"
+            "name": "John",
+            "email": "user.appointment@gmail.com"
         },
         {
-            "name": "Mike"
+            "name": "Mike",
+            "email": "user.appointment@gmail.com"
         },
         {
-            "name": "James"
+            "name": "James",
+            "email": "user.appointment@gmail.com"
         }
     ]
 }

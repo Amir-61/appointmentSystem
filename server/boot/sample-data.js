@@ -1,6 +1,8 @@
-// server/boot/sample-data.js
-var async = require('async');
+// 
+// Inserting sample data for models (appointment, patient and physician)
+//
 
+var async = require('async');
 // Initial data for different models
 var patients = require("../initialData/patients")['patients'];
 var physicians = require("../initialData/physicians")['physicians'];
@@ -8,32 +10,7 @@ var users = require("../initialData/users")['users'];
 
 module.exports = function (server, done) {
   console.log('sample-data, Importing sample data...');
-  async.parallel({
-    insert_physicians_appointments: function (callback) {
-      server.dataSources.mysqlDs.automigrate(['Physician', 'Appointment'], function (err) {
-        if (err) {
-          console.error("sample-data.insert_physicians_appointments, ERR:", err);
-          callback(err, null);
-        } else {
-          var PhysicianModel = server.models.Physician;
-          async.each(physicians, function (Physician, next) {
-            var appointments = Physician.appointments || [];
-            delete Physician.appointments;
-            PhysicianModel.create(Physician, function (err, physician) {
-              console.log("sample-data.insert_physicians_appointments, physician:", physician);
-              if (err)
-                return next(err, null);
-              var AppointmentModel = server.models.Appointment;
-              async.each(appointments, function (appointment, cb) {
-                console.log("sample-data.insert_physicians_appointments, appointment:", appointment);
-                //physician.appointments.create(appointment, cb);
-                AppointmentModel.create(appointment, cb);
-              }, next);
-            });
-          }, callback);
-        }
-      });
-    },
+  async.auto({
     insert_users: function (callback) {
       server.dataSources.mysqlDs.automigrate('user', function (err) {
         if (err) {
@@ -65,7 +42,35 @@ module.exports = function (server, done) {
           }, callback);
         }
       });
-    }
+    },
+    insert_physicians_appointments: ['insert_patients',function (callback) {
+      // `insert_patients` is the requirement for `insert_physicians_appointments` becasue 
+      // when we insert appointments in DB we need to already have patient info (including email)
+      // to send them email through the operation hook defined in appointment.js (after save)
+      server.dataSources.mysqlDs.automigrate(['Physician', 'Appointment'], function (err) {
+        if (err) {
+          console.error("sample-data.insert_physicians_appointments, ERR:", err);
+          callback(err, null);
+        } else {
+          var PhysicianModel = server.models.Physician;
+          async.each(physicians, function (Physician, next) {
+            var appointments = Physician.appointments || [];
+            delete Physician.appointments;
+            PhysicianModel.create(Physician, function (err, physician) {
+              console.log("sample-data.insert_physicians_appointments, physician:", physician);
+              if (err)
+                return next(err, null);
+              var AppointmentModel = server.models.Appointment;
+              async.each(appointments, function (appointment, cb) {
+                console.log("sample-data.insert_physicians_appointments, appointment:", appointment);
+                //physician.appointments.create(appointment, cb);
+                AppointmentModel.create(appointment, cb);
+              }, next);
+            });
+          }, callback);
+        }
+      });
+    }]
   }, function (err, results) {
     if (err)
       console.error("sample-data, ERR:", err);

@@ -1,3 +1,3 @@
-module.exports = function(Patient) {
+module.exports = function (Patient) {
 
 };

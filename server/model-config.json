@@ -1,48 +1,51 @@
 {
-  "_meta": {
-    "sources": [
-      "loopback/common/models",
-      "loopback/server/models",
-      "../common/models",
-      "./models"
-    ],
-    "mixins": [
-      "loopback/common/mixins",
-      "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
-    ]
-  },
-  "AccessToken": {
-    "dataSource": "db",
-    "public": false
-  },
-  "ACL": {
-    "dataSource": "db",
-    "public": false
-  },
-  "RoleMapping": {
-    "dataSource": "db",
-    "public": false
-  },
-  "Role": {
-    "dataSource": "db",
-    "public": false
-  },
-  "user": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "Physician": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "Appointment": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "Patient": {
-    "dataSource": "mysqlDs",
-    "public": true
-  }
+    "_meta": {
+        "sources": [
+            "loopback/common/models",
+            "loopback/server/models",
+            "../common/models",
+            "./models"
+        ],
+        "mixins": [
+            "loopback/common/mixins",
+            "loopback/server/mixins",
+            "../common/mixins",
+            "./mixins"
+        ]
+    },
+    "AccessToken": {
+        "dataSource": "db",
+        "public": false
+    },
+    "ACL": {
+        "dataSource": "db",
+        "public": false
+    },
+    "RoleMapping": {
+        "dataSource": "db",
+        "public": false
+    },
+    "Role": {
+        "dataSource": "db",
+        "public": false
+    },
+    "user": {
+        "dataSource": "mysqlDs",
+        "public": true
+    },
+    "Physician": {
+        "dataSource": "mysqlDs",
+        "public": true
+    },
+    "Appointment": {
+        "dataSource": "mysqlDs",
+        "public": true
+    },
+    "Patient": {
+        "dataSource": "mysqlDs",
+        "public": true
+    },
+    "Email": {
+        "dataSource": "emailDs"
+    }
 }

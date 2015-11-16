@@ -12,5 +12,22 @@
         "database": "appointment",
         "username": "root",
         "password": ""
+    },
+    "emailDs": {
+        "name": "emailDs",
+        "defaultForType": "mail",
+        "connector": "mail",
+        "transports": [
+            {
+                "type": "SMTP",
+                "host": "smtp.gmail.com",
+                "secure": true,
+                "port": 465,
+                "auth": {
+                    "user": "no.reply.appointment@gmail.com",
+                    "pass": "appointmentpassword"
+                }
+            }
+        ]
     }
 }
